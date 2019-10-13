@@ -44,7 +44,6 @@ class vector(collections.Sequence):
 
 
     @property
-    #getter
     def x(self):
         return self._x
 
