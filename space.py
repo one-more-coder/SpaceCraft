@@ -311,6 +311,7 @@ def finish():
 #Setting up screen width,height, starting position (x,y) of the SpaceCraft
 setup( 1100 , 700 , 0 , 0  )
 bgcolor('silver')
+#bgpic("image1.jpeg")
 #hiding the turtle
 hideturtle()
 
