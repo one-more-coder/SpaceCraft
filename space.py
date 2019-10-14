@@ -125,7 +125,7 @@ def draw_ship():
     ship.x = ship_pos['x']
     ship.y = ship_pos['y']
     goto( ship.x,ship.y )
-    dot(20,'red')
+    dot(20,'blue')
 
 
 # main draw function to show graphics on the screen
@@ -199,7 +199,7 @@ def draw():
     for target in targets:
         up()
         goto( target.x,target.y )
-        dot(30,'blue')
+        dot(30,'red')
         up()
 
     # finally drawing the ship
