@@ -6,11 +6,11 @@ import os
 def floor(value,size,offset=200):
     return float(((value + offset) // size) * size - offset)
 
-def path(filename):
-    filepath = os.path.realpath(__file__)
-    dirpath = os.path.dirname(filename)
-    fullpath = os.path.join(dirpath,filename)
-    return fullpath
+# def path(filename):
+#     filepath = os.path.realpath(__file__)
+#     dirpath = os.path.dirname(filename)
+#     fullpath = os.path.join(dirpath,filename)
+#     return fullpath
 
 def square(x,y,size,name):
     import turtle as t
@@ -65,11 +65,11 @@ class vector(collections.Sequence):
         self._y = round(value,self.PRECISION)
 
 
-    def __hash__(self):
-        if self._hash is None:
-            pair = (self.x,self.y)
-            self._hash = hash(pair)
-        return self._hash
+    # def __hash__(self):
+    #     if self._hash is None:
+    #         pair = (self.x,self.y)
+    #         self._hash = hash(pair)
+    #     return self._hash
 
     def __len__(self):
         return 2
