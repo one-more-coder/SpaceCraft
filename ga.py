@@ -84,6 +84,11 @@ class Population:
             self.objects[i].score = 0
 
     #Defining mutation functions
+    """
+    In it , we are checking whether we have to do mutation or not.
+    So, for it , we are checking the probability through random function.
+    If the value of rand is 1 , then we are updating the value of weight[0]
+    """
     def mutation(self):
         for i in range(self.popSize):
             rand = random.random()
