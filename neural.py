@@ -31,6 +31,6 @@ class NeuralNetwork:
         else:
             return  0
 
-t = NeuralNetwork()
+#t = NeuralNetwork()
 #t.my_variable()
-print(t.predict((2,2)))
+#print(t.predict((2,2)))
