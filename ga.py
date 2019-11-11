@@ -1,4 +1,6 @@
 from neural import NeuralNetwork as NN
+import random
+
 
 #Defining individual SpaceCraft object property
 class Individual:
@@ -81,8 +83,16 @@ class Population:
             self.objects[i].fitness = 0
             self.objects[i].score = 0
 
+    #Defining mutation functions
+    def mutation(self):
+        for i in range(self.popSize):
+            rand = random.random()
+            if rand == 1:
+                self.objects[i].individual_obj.weights[0] = random.random()
+
 
 t = Population()
 t.selection()
 t.crossover()
+t.mutation()
 t.display()
