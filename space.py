@@ -127,6 +127,7 @@ class Game:
 
     # function to draw boundary of game
     def boundary(self):
+
         up()
         goto(500,250)
         down()
